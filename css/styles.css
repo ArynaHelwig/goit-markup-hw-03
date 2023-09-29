@@ -4,32 +4,28 @@ body {
     background-color: #FFFFFF;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 p,
 h1,
-h2,
-h3,
-{
-list-style: none;
-margin-top: 0;
-margin-bottom: 0;
+h2 h3 h4 h5 h6 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
-
-
-
-
-ul {
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
-}
-
 
 a {
     text-decoration: none;
     color: currentColor;
 }
 
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
 
 button {
     cursor: pointer;
@@ -38,7 +34,6 @@ button {
 
 img {
     display: block;
-    max-width: 100%;
 }
 
 
@@ -46,50 +41,26 @@ address {
     font-style: normal;
 }
 
-
-.body {
-    background: var(--WHITE, #FFF);
-    border-bottom: 1px solid #E7E9FC;
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
 }
-
-
-
-
-
-
-
 
 /*================HEADER================*/
 .header {
-    border-bottom: 1px solid #e7e9fc;
+    background-color: #fff;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
-
-.container {
-    width: 1158px;
-    padding: 0 15px;
-    margin: 0px auto;
-    align-content: center;
-}
-
-
-.header .container {
-    display: flex;
-    align-items: center;
-}
-
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-}
-
+.header-nav {}
 
 .header-logo-web:hover,
 .header-logo-web:focus {
     color: #404BBF
 }
-
 
 .header-logo-web {
     color: #4D5AE5;
@@ -99,22 +70,15 @@ address {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: flex;
-    align-items: flex-start;
-    margin-right: 76px;
-    margin-left: 156px;
-    justify-content: center;
-
-
+    transition: #404bbf;
 }
-
 
 .header-logo-studio {
     color: #2E2F42;
 }
 
-
 .header-list {
+
     list-style-type: none;
     display: flex;
     align-items: flex-start;
@@ -122,53 +86,41 @@ address {
     padding-top: 0px;
     margin-right: 0px;
 
-
 }
 
-
 .header-item {}
-
 
 .header-item-link :hover,
 .header-item-link: :focus {
     color: #404BBF;
 }
 
-
 .header-item-link {
     color: #2E2F42;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 24px 0;
 }
-
 
 .header-item-link:hover,
 .header-item-link:focus {
     color: #404BBF;
 }
 
-
 .header-contact {
     font-style: normal;
 }
 
-
 .header-contact-list {}
-
 
 .header-contact-link:hover,
 .header-contact-link:focus {
     color: #404BBF;
 }
 
-
 .header-contact-link {
     color: #434455;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
@@ -176,27 +128,14 @@ address {
 }
 
 
-
-
 /*================MAIN================*/
-.container-main {
-    background: #2E2F42;
-    padding-top: 188px;
-    padding-bottom: 188px;
-}
-
-
 .main-section {
     background-color: #2e2f42
 }
 
-
-
-
-
-
-.main {}
-
+.main {
+    background: #2E2F42;
+}
 
 .main-title {
     color: #FFF;
@@ -206,16 +145,15 @@ address {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    max-width: 496px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
-    height: 120px;
-
-
-
+    max-width: 496px;
+    margin-bottom: 48px;
+    padding-top: 188px;
 
 }
-
-
 
 
 .main-button:hover,
@@ -223,16 +161,16 @@ address {
     background-color: #404BBF;
 }
 
-
 .main-button {
     color: #FFF;
-    font-family: inherit;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     background: #4D5AE5;
     cursor: pointer;
+    border-radius: 4px;
     display: inline-flex;
     padding: 16px 32px;
     align-items: flex-start;
@@ -240,22 +178,7 @@ address {
     border-radius: 4px;
     text-align: center;
     margin: 0 auto;
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
 
 
 
@@ -266,20 +189,13 @@ address {
     padding: 120px 0;
 }
 
-
 .container-feature {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    display: flex;
 }
-
-
-
 
 .feature-list {}
 
-
 .feature-item {}
-
 
 .feature-title {
     color: #2E2F42;
@@ -287,10 +203,7 @@ address {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-
-
 }
-
 
 .feature-text {
     color: #434455;
@@ -301,14 +214,10 @@ address {
     letter-spacing: 0.02em;
 }
 
-
 /*================TEAM================*/
 .team-section {
-    background-color: #F4F4FD;
-
-
+    background-color: #F4F4FD
 }
-
 
 .container-team {
     max-width: 100%;
@@ -317,9 +226,8 @@ address {
     margin-bottom: 8px;
 }
 
-
 .team-list {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF background-color: #FFFFFF;
     display: flex;
     column-gap: 24px;
     flex-wrap: wrap;
@@ -328,7 +236,6 @@ address {
     flex-direction: row;
     justify-content: center
 }
-
 
 .team-main-title {
     color: #2E2F42;
@@ -346,9 +253,7 @@ address {
     height: 40px;
 }
 
-
 .team-item {}
-
 
 .team-title {
     color: #2E2F42;
@@ -357,7 +262,6 @@ address {
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
-
 
 .team-text {
     color: #434455;
@@ -368,8 +272,8 @@ address {
     letter-spacing: 0.02em;
 }
 
-
 /*================PORTFOLIO================*/
+
 .portfolio {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -377,7 +281,6 @@ address {
 
 
 }
-
 
 .container-portfolio {
     max-width: 100%;
@@ -389,23 +292,19 @@ address {
     padding-left: 156px;
 }
 
-
 .portfolio-main-title {
     color: #2E2F42;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
-
-
 }
 
-
 .portfolio-list {
-
-
     display: flex;
     column-gap: 24px;
     flex-wrap: wrap;
@@ -414,11 +313,9 @@ address {
     padding: 0;
 }
 
-
 .portfolio-item {
     width: calc((100% -48%px)/3);
 }
-
 
 .portfolio-title {
     color: #2E2F42;
@@ -427,7 +324,6 @@ address {
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
-
 
 .portfolio-text {
     color: #434455;
@@ -439,17 +335,10 @@ address {
 }
 
 
-
-
 /*================FOOTER================*/
 .footer {
-    background-color: #2e2f42;
-    padding: 100px 0;
+    background-color: #2e2f42 padding: 100px 0;
 }
-
-
-.container-footer {}
-
 
 .footer-logo-web {
     color: #4d5ae5;
@@ -461,22 +350,17 @@ address {
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 16px;
-
-
 }
-
 
 .footer-logo-studio {
     color: #f4f4fd;
 }
 
 
-
-
 .footer-text {
     color: #F4F4FD;
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
