@@ -325,6 +325,9 @@ img {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .list-item-img {
@@ -336,6 +339,10 @@ img {
     border: 1px solid #e7e9fc;
     border-top: none;
     width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .list-item-name {
@@ -345,13 +352,22 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .list-item-products {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
+
 
 
 
