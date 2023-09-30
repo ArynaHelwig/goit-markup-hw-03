@@ -307,6 +307,12 @@ img {
     padding-bottom: 120px;
 }
 
+.section-portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
 
 
 .portfolio-title {
