@@ -357,7 +357,7 @@ img {
 
 /*================FOOTER================*/
 .footer {
-    background: var(--NAVY-BLUE, #2e2f42);
+    background-color: #2e2f42;
     padding: 100px 0;
 }
 
@@ -368,15 +368,16 @@ img {
 
 .footer-logo-web {
     color: #4d5ae5;
-    font-family: "Raleway", sans-serif;
+    font-family: Raleway, sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-decoration: none;
     display: inline-block;
     margin-bottom: 16px;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer-studio {
@@ -389,6 +390,5 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-decoration: none;
-    width: 264px;
+    max-width: 264px;
 }
