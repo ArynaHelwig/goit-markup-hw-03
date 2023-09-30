@@ -379,18 +379,13 @@ img {
 
 /*================FOOTER================*/
 .footer {
-    background-color: #2e2f42;
-    padding: 100px 0;
-}
-
-.container.footer-container {
-    padding-left: 15px;
-    flex-shrink: 0;
+    background: #2e2f42;
+    padding: 100px 0 100px;
 }
 
 .footer-logo-web {
     color: #4d5ae5;
-    font-family: Raleway, sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
@@ -398,12 +393,17 @@ img {
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 16px;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .footer-studio {
     color: #f4f4fd;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: inline-block;
 }
 
 .footer-text {
